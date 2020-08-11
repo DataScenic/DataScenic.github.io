@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ryan Gale</title>
-    <link>http://ryangale.github.io/</link>
+    <link>https://datascenic.github.io/</link>
     <description>Recent content on Ryan Gale</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://ryangale.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://datascenic.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://ryangale.github.io/about/</link>
+      <link>https://datascenic.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ryangale.github.io/about/</guid>
+      <guid>https://datascenic.github.io/about/</guid>
       <description>After the realization set in that I will not be making it as a pro soccer player or ping pong guru (wasn&amp;rsquo;t even close), I spent many evenings reading xkcd comics. This quickly turned into a passion for science and technology. I&amp;rsquo;m currently a senior physics major with a minor in computer science. My professional interests include computational physics, cyber-security, machine learning, and entrepreneurship.
 When I&amp;rsquo;m not coding or reading tech blogs I love exploring the outdoors, martial arts, chess, and photography.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>http://ryangale.github.io/contact/</link>
+      <link>https://datascenic.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ryangale.github.io/contact/</guid>
+      <guid>https://datascenic.github.io/contact/</guid>
       <description>Send me an email at rjg295 at cornell dot edu</description>
     </item>
     
     <item>
       <title>Deep Q-Learning</title>
-      <link>http://ryangale.github.io/posts/dqn/</link>
+      <link>https://datascenic.github.io/posts/dqn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ryangale.github.io/posts/dqn/</guid>
+      <guid>https://datascenic.github.io/posts/dqn/</guid>
       <description>This article chronicles my dive into reinforcement learning and the training of a deep neural network agent to play Pong on the Atari 2600. This compiles information from a handful of fantastic teachers including Ryan Benmalek, Lilian Weng, Richard Sutton, Andrej Karpathy, among others listed in the references.
 Background  Reinforcement learning is a subset of machine learning involving the training of an agent to optimally interact with its environment. As the agent explores its environment it will receive rewards that indicate how well it is doing at its task.</description>
     </item>
