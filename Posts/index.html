@@ -52,7 +52,7 @@
                             
                                 <article id="deep-q-learning">
                                     <h2 class="major">Deep Q-Learning</h2>
-                                    <span class="image main"><img src="" alt="" style="width:500px;height:400px;"/></span>
+                                    <!-- <span class="image main"><img src="" alt="" style="width:500px;height:400px;"/></span> -->
                                     <p>This article chronicles my dive into reinforcement learning and the
 training of a deep neural network agent to play Pong on the Atari 2600.
 This compiles information from a handful of fantastic teachers including
@@ -81,10 +81,11 @@ environment with each edge corresponding to actions that an agent can
 take. Each action has an associated probability of being taken in
 relation to the expected reward that is estimated for that action.</p>
 
-<p>\centering
+<p>
     <figure id="mdp" class="unnumbered">
-        <img src="images/mdp.jpg" 
-        alt="Example of a Markov decision process." style="width:500px;height:400px;">
+        <center>
+            <img src="images/mdp.jpg" alt="Example of a Markov decision process." style="width:500px;height:300px;">
+        </center>
     </figure>
 </p>
 
@@ -101,8 +102,10 @@ to know the location of the two paddles and ball.</p>
 
 <p>\centering
     <figure id="agent_environment" class="unnumbered">
+        <center>
         <img src="images/agent_environment.png" 
-        alt="RL models rely on the Markov property." style="width:500px;height:400px;">
+        alt="RL models rely on the Markov property." style="width:200px;height:100px;">
+        </center>
     </figure>
 </p>
 
@@ -137,8 +140,10 @@ actions (rewards are allocated upon completion of a game):</p>
 The discounting factor <span  class="math">\(\gamma\in[0,1]\)</span> penalizes future rewards.</p>
 
 <p>\centering
-<figure id="background" class="unnumbered"><img src="images/discounted.png" alt="The most recent action prior to a reward is the most relevant.
-[@discount]" style="width:500px;height:400px;"></figure></p>
+<figure id="background" class="unnumbered">
+<center><img src="images/discounted.png" alt="The most recent action prior to a reward is the most relevant.
+[@discount]" style="width:500px;height:350px;">
+</center></figure></p>
 
 <p></p>
 
@@ -332,8 +337,12 @@ that this allows the agent to \&quot;replay important transitions more
 frequently, and therefore learn more efficiently\&quot; <a class="cite" href="#prioritized"></a>.</p>
 
 <p>\centering
-<figure id="dqn-variants" class="unnumbered"><img src="images/model_comparison.png" alt="Experimenting with DQN
-variants." style="width:500px;height:400px;"></figure></p>
+<figure id="dqn-variants" class="unnumbered">
+<center>
+<img src="images/model_comparison.png" alt="Experimenting with DQN
+variants." style="width:500px;height:300px;">
+</center>
+</figure></p>
 
 <p>In my experiments, I've only noticed a very slight increase in
 performance with the DDQN. Because the game is not sufficiently complex,
