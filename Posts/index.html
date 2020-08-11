@@ -21,7 +21,7 @@
             
                 <header id="header">
                     <div class="logo">
-                        <a href="/"><span class="home"></span></a>
+                        <a href="/"><span class="icon fa-home"></span></a>
                     </div>
                     <div class="content">
                         <div class="inner">
@@ -81,8 +81,12 @@ environment with each edge corresponding to actions that an agent can
 take. Each action has an associated probability of being taken in
 relation to the expected reward that is estimated for that action.</p>
 
-<p>Example of a Markov decision process.
-<!-- ![](../../images/mdp.jpg) --></p>
+<p>\centering
+    <figure id="mdp" class="unnumbered">
+        <img src="images/mdp.jpg" 
+        alt="Example of a Markov decision process.">
+    </figure>
+</p>
 
 <p>In the case of Pong, the agent has no information about the game engine,
 instead we simply feed it a vector of raw pixel values representing the
@@ -95,8 +99,12 @@ the current state. Since the current state contains all of the
 statistics necessary for making future decisions, the agent only needs
 to know the location of the two paddles and ball.</p>
 
-<p>RL models rely on the Markov property.
-<!-- ![](images/agent_environment.png) --></p>
+<p>\centering
+    <figure id="agent_environment" class="unnumbered">
+        <img src="images/agent_environment.png" 
+        alt="RL models rely on the Markov property.">
+    </figure>
+</p>
 
 <p>Now the agent can make an optimal decision according to some rule or
 strategy it develops as it makes a series of good or bad moves. In RL,
