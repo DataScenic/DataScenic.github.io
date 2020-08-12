@@ -141,7 +141,7 @@ the <strong>return</strong>, is the sum of discounted rewards gained by future
 actions (rewards are allocated upon completion of a game):</p>
 
 <span  class="math">\(G_t=R_{t+1}+\gamma R_{t+2}+\dots=\sum\limits_{k=0}^{\infty}\gamma^kR_{t+k+1}\)</span>
-<pre>The discounting factor <span  class="math">\(\gamma\in[0,1]\)</span> penalizes future rewards.</pre>
+<pre>The discounting factor </pre> <span  class="math">\(\gamma\in[0,1]\)</span> <pre> penalizes future rewards.</pre>
 
 <p>
 <figure id="background" class="unnumbered">
@@ -282,7 +282,8 @@ neural network to approximate it. If we use the neural net parameters
         torch.save(self.q.state_dict(), 
                     os.path.join(self.save_location, 
                     &#39;policy_final.pt&#39;))</code></pre>
-<p>Full source code can be found [here](github.com/DataScenic/DQN)
+<p>Full source code can be found <a href="http://github.com/DataScenic/DQN">here</a></p>
+<p>
 This implementation utilizes an experience replay buffer, a memory bank
 of previous observation-action pairs and their associated rewards. By
 updating the network from this buffer, we can learn from previous
@@ -303,9 +304,7 @@ match-up 21-0.</p>
     <figure id="agent_environment" class="unnumbered">
     <center>
         Gameplay
-    </center>
-    <center>
-    <video width="200" height="400" controls>
+    <video width="300" height="400" controls>
         <source src="videos/pong.mp4" type="video/mp4">
     </video>
     </center>
