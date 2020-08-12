@@ -103,10 +103,13 @@ to know the location of the two paddles and ball.</p>
 
 <p>
     <figure id="agent_environment" class="unnumbered">
-        <center>
+    <center>
         RL models rely on the Markov property
+    </center>
+    <center>
+
         <img src="images/agent_environment.png" 
-        alt="RL models rely on the Markov property." style="width:200px;height:100px;">
+        alt="RL models rely on the Markov property." style="width:300px;height:250px;">
         </center>
     </figure>
 </p>
@@ -138,8 +141,8 @@ in state <span  class="math">\(s\)</span>: <span  class="math">\(V_{\pi}(s)=E_{\
 the <strong>return</strong>, is the sum of discounted rewards gained by future
 actions (rewards are allocated upon completion of a game):</p>
 
-<p><span  class="math">\(G_t=R_{t+1}+\gamma R_{t+2}+\dots=\sum\limits_{k=0}^{\infty}\gamma^kR_{t+k+1}\)</span>
-The discounting factor <span  class="math">\(\gamma\in[0,1]\)</span> penalizes future rewards.</p>
+<pre><span  class="math">\(G_t=R_{t+1}+\gamma R_{t+2}+\dots=\sum\limits_{k=0}^{\infty}\gamma^kR_{t+k+1}\)</span>
+The discounting factor <span  class="math">\(\gamma\in[0,1]\)</span> penalizes future rewards.</pre>
 
 <p>
 <figure id="background" class="unnumbered">
@@ -298,18 +301,13 @@ in time. After 10,000 episodes and roughly 500,000 frames of experience
 this agent was able to achieve impressive results, winning almost every
 match-up 21-0.</p>
 
-<p>
-![The agent was able to achieve a very high score per match-up (game to</p>
-
-<ol start="21">
-<li>against the default bot](images/DQN_pong.png)</li>
-</ol>
-
 <center>
     Gameplay
-    <video width="200" height="400" controls>
-        <source src="videos/pong.mp4" type="video/mp4">
-    </video>
+</center>
+<center>
+<video width="200" height="400" controls>
+    <source src="videos/pong.mp4" type="video/mp4">
+</video>
 </center>
 
 <h1 id="dqn-variants-dqnvariants-unnumbered-unnumbered" source="video/pong.mp4" width="125mm">DQN Variants </h1>
@@ -324,7 +322,10 @@ prioritized replay buffer.</p>
 neural net allowing the estimates to be regularized<a class="cite" href="#ddqn"></a>. More
 specifically, one network, <span  id="dqn-variants-dqnvariants-unnumbered-unnumbered" source="video/pong.mp4" width="125mm" class="math">\(Q_{\theta}\)</span>, chooses the action while a
 second, <span  id="dqn-variants-dqnvariants-unnumbered-unnumbered" source="video/pong.mp4" width="125mm" class="math">\(Q_{\theta^-}\)</span> evaluates that action. The new update step is:
+<center>
 <span  id="dqn-variants-dqnvariants-unnumbered-unnumbered" source="video/pong.mp4" width="125mm" class="math">\(Q(S_t,a)=R_{t+1}+\gamma Q(S_{t+1}, max_{a\in A}Q(S_{t+1},a;\theta_t);\theta_t^-)\)</span></p>
+</center>
+
 
 <p>The authors of DDQN show that this decoupling effectively reduces the
 tendency of the DQN to overestimate observation-action pairs in
@@ -342,6 +343,8 @@ frequently, and therefore learn more efficiently&quot; <a class="cite" href="#pr
 <figure id="dqn-variants" class="unnumbered">
 <center>
 Experimenting with DQN variants
+</center>
+<center>
 <img src="images/model_comparison.png" alt="Experimenting with DQN
 variants." style="width:500px;height:300px;">
 </center>
