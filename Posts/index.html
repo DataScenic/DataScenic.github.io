@@ -53,10 +53,10 @@
                                 <article id="deep-q-learning">
                                     <h2 class="major">Deep Q-Learning</h2>
                                     <!-- <span class="image main"><img src="" alt="" style="width:500px;height:400px;"/></span> -->
-                                    <p>This article chronicles my dive into reinforcement learning and the
+<p>This article chronicles my dive into reinforcement learning and the
 training of a deep neural network agent to play Pong on the Atari 2600.
 This compiles information from a handful of fantastic teachers including
-Ryan Benmalek, Lilian Weng, Richard Sutton, Andrej Karpathy, among
+Lilian Weng, Richard Sutton, Andrej Karpathy, among
 others listed in the references.</p>
 
 <h1 id="background-background-unnumbered-unnumbered">Background </h1>
@@ -140,8 +140,10 @@ in state <span  class="math">\(s\)</span>: <span  class="math">\(V_{\pi}(s)=E_{\
 the <strong>return</strong>, is the sum of discounted rewards gained by future
 actions (rewards are allocated upon completion of a game):</p>
 
+<center>
 <span  class="math">\(G_t=R_{t+1}+\gamma R_{t+2}+\dots=\sum\limits_{k=0}^{\infty}\gamma^kR_{t+k+1}\)</span>
-<pre>The discounting factor </pre> <span  class="math">\(\gamma\in[0,1]\)</span> <pre> penalizes future rewards.</pre>
+</center>
+<p>The discounting factor <span  class="math">\(\gamma\in[0,1]\)</span> penalizes future rewards.</p>
 
 <p>
 <figure id="background" class="unnumbered">
@@ -304,6 +306,8 @@ match-up 21-0.</p>
     <figure id="agent_environment" class="unnumbered">
     <center>
         Gameplay
+    </center>
+    <center>
     <video width="300" height="400" controls>
         <source src="videos/pong.mp4" type="video/mp4">
     </video>
@@ -401,7 +405,7 @@ facets of the human dimension.</p>
 
 <h1 id="Sources-unnumbered-unnumbered" width="125mm">References</h1>
 
-<pre>
+<p>
     [1]    Adri`a Puigdom`enech et al.Agent57: Outperforming the human Atari bench-mark.url:https://deepmind.com/blog/article/Agent57-Outperforming-the-human-Atari-benchmark.
     [2]    Daniel Mankowitz et al.Real-World Reinforcement Learning (RWRL) Chal-lenge Framework.url:https://github.com/google-research/realworldrl_suite.
     [3]    Elias Najarro et al.Meta-Learning through Hebbian Plasticity in RandomNetworks.url:https://arxiv.org/abs/2007.02686.
@@ -411,7 +415,7 @@ facets of the human dimension.</p>
     [7]    Hado  van  Hasselt  et  al.Deep Reinforcement Learning with Double Q-learning.url:https://arxiv.org/abs/1509.06461.
     [8]    Andrej Karpathy.Deep RL Bootcamp Lecture 4B Policy Gradients.url:https://www.youtube.com/watch?v=tqrcjHuNdmQ.
     [9]    R.S.  Sutton  and  A.G.  Barto.Reinforcement Learning: An Introduction.url:http://www.cs.ualberta.ca/%5Cmaketilde%20sutton/book/ebook.
-</pre>
+</p>
 
                                 </article>
                             
