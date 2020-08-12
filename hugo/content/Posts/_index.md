@@ -1,5 +1,5 @@
 ---
 title: "Highlight Reel"
 description: ""
-icon: "home"
+icon: "Home"
 ---
